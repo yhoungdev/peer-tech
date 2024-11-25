@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Jersey 10", sans-serif;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jersey 10", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.wallet-adapter-button {
+  background-color: #c1ff00 !important;
+  color: black !important;
+  font-family: "Jersey 10", sans-serif !important;
+  border-radius: 10px !important;
+  height: 30px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.wallet-adapter-button:hover {
+  background-color: rgba(193, 255, 0, 0.9) !important;
+}
+
+.wallet-adapter-modal-wrapper {
+  background: #1a1a1a !important;
+}
+
+.wallet-adapter-modal-button-close {
+  background-color: #c1ff00 !important;
+  border-radius: 10px !important;
+  height: 30px !important;
+}
+
+.wallet-adapter-modal-title {
+  color: white !important;
+}
+
+.wallet-adapter-modal-list .wallet-adapter-button {
+  background-color: transparent !important;
+  color: white !important;
+  height: auto !important;
+}
+
+.wallet-adapter-modal-button-close,
+.wallet-adapter-button-trigger {
+  background-color: #c1ff00 !important;
+  color: black !important;
+}
+
+.wallet-adapter-modal-list .wallet-adapter-button:hover {
+  background-color: transparent !important;
+}
