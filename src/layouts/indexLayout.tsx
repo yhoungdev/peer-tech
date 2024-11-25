@@ -16,9 +16,9 @@ export default function IndexLayout({ children }: Iprops) {
     <div className="min-h-screen ">
       <div className="rightcontents relative">
         <div className="relative z-10">
-          <DaoTokenData />
+          {/* <DaoTokenData /> */}
           <div className="flex gap-10  ">
-            <div className="flex-1 px-[3em]">{children}</div>
+            <div className="px-[3em] w-full">{children}</div>
           </div>
 
           <div className="mt-4  ">
@@ -30,7 +30,7 @@ export default function IndexLayout({ children }: Iprops) {
             >
               Unclaimed Groups
             </h3>
-            <div
+            {/* <div
               className="flex w-full my-4 flex-wrap items-center  "
               style={{
                 gap: "3em",
@@ -79,31 +79,8 @@ export default function IndexLayout({ children }: Iprops) {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
-        </div>
-
-        <div
-          className="
-          absolute 
-          right-[20%]
-          top-[70%] 
-          -translate-y-1/2 
-          z-[5]
-          pointer-events-none
-          w-[500px]
-          h-[500px]
-          mix-blend-screen
-          opacity-40
-        "
-        >
-          <Image
-            src="/gradient.png"
-            alt="Gradient Effect"
-            fill
-            className="object-contain"
-            priority
-          />
         </div>
       </div>
     </div>

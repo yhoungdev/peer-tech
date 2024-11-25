@@ -54,9 +54,9 @@ export default function RootLayout({
                         "radial-gradient(circle at right, #ceea7036 0%, #000000 55%, #000000 100%)",
                     }}
                   >
-                    <main className="w-[850px] mx-auto">{children}</main>
+                    <main className=" w-full md:w-[850px] mx-auto">{children}</main>
 
-                    <aside className="flex-shrink-0 w-80">
+                    <aside className="flex-shrink-0 w-80 hidden md:block">
                       <GroupsCard />
                     </aside>
                   </div>

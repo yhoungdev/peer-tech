@@ -16,8 +16,8 @@ export default function Navbar() {
     <div className="flex items-center justify-between px-6 py-6">
       <div></div>
       <div className="flex items-center gap-[4em]">
-        <div className="relative w-[400px]">
-          <input
+        <div className="relative md:w-[400px]">
+        <input
             type="text"
             placeholder="Search......"
             className="
