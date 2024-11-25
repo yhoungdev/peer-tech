@@ -3,7 +3,7 @@ export default function Ads() {
     <div
       className="
       w-full  
-      h-[157px]  
+      h-[147px]
       bg-[#C1FF00] 
       rounded-[30px]
       relative 
@@ -22,7 +22,7 @@ export default function Ads() {
       "
       >
         <div
-          className="w-[200px] h-[170px] relative -top-2"
+          className="w-[200px] h-[160px] relative -top-2"
           style={{
             backgroundImage: "url(/bunny-left.png)",
             backgroundRepeat: "no-repeat",
@@ -69,7 +69,7 @@ export default function Ads() {
         </div>
 
         <div
-          className="w-[200px] h-[170px] relative -top-1"
+          className="w-[200px] h-[160px] relative -top-1"
           style={{
             backgroundImage: "url(/bunny-right.png)",
             backgroundRepeat: "no-repeat",
