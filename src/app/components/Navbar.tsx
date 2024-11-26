@@ -3,6 +3,7 @@ import { useWallet } from "@solana/wallet-adapter-react";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { Button } from "./ui/button";
 
 export default function Navbar() {
   const { connected } = useWallet();
@@ -46,12 +47,14 @@ export default function Navbar() {
             <Image src="/searchicon.png" alt="Search" width={20} height={20} />
           </div>
         </div>
+
+       
         <WalletMultiButton
           className="
             !bg-[#C1FF00] 
             !px-6 
             !py-2 
-            !rounded-full 
+            !rounded-md 
             !text-black 
             !font-medium
             hover:!opacity-90

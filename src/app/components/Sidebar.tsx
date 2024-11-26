@@ -2,6 +2,10 @@
 import { menuItems } from "@/data/navs";
 import Image from "next/image";
 import { useState } from "react";
+import { Button } from "./ui/button";
+import GroupsCard from "./GroupsCard";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -10,16 +14,27 @@ interface SidebarProps {
 
 export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
   const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
+  const [isGroupsOpen, setIsGroupsOpen] = useState(false);
 
   const toggleMobileSidebar = () => {
     setIsMobileSidebarOpen(!isMobileSidebarOpen);
   };
+
+  
+  const path = usePathname()
 
   return (
     <>
 
       <div className="md:hidden fixed top-0 left-0 right-0 bg-[#0F0E0E] z-40 flex justify-between items-center p-4">
         <h1 className="text-2xl font-normal text-white">Peer.onl</h1>
+        
+        <div className="flex items-center gap-4">
+        {
+          path === '/' && <Link href={'/group'}>
+          <Button>Groups</Button>
+          </Link>
+        }
         <button 
           onClick={toggleMobileSidebar}
           className="w-6 h-5 flex flex-col justify-between cursor-pointer"
@@ -46,6 +61,7 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
           `}
           />
         </button>
+        </div>
       </div>
 
 
@@ -80,7 +96,7 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
             Peer.onl
           </h1>
 
-
+          
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="w-6 h-5 flex flex-col justify-between cursor-pointer"
@@ -335,6 +351,8 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
           onClick={toggleMobileSidebar}
         />
       )}
+
+
     </>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function GroupsCard() {
   const groups = [
@@ -70,6 +71,8 @@ export default function GroupsCard() {
     },
   ];
 
+
+
   return (
     <div
       className="
@@ -113,13 +116,14 @@ export default function GroupsCard() {
               justify-between 
               p-3
               border-b
+              w-full
               border-[#2C2C2C]
               ${group.id === groups.length ? "border-b-0" : ""}
             `}
           >
             <div className="flex items-center gap-3">
               <div className="relative">
-                <div className="w-[40px] h-[40px] rounded-full overflow-hidden">
+                <div className=" w-full h-[40px] rounded-full overflow-hidden">
                   <Image
                     src={group.image}
                     alt={group.name}
