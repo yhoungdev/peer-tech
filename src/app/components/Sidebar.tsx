@@ -3,7 +3,6 @@ import { menuItems } from "@/data/navs";
 import Image from "next/image";
 import { useState } from "react";
 import { Button } from "./ui/button";
-import GroupsCard from "./GroupsCard";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -14,7 +13,6 @@ interface SidebarProps {
 
 export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
   const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
-  const [isGroupsOpen, setIsGroupsOpen] = useState(false);
 
   const toggleMobileSidebar = () => {
     setIsMobileSidebarOpen(!isMobileSidebarOpen);
