@@ -3,7 +3,7 @@ export default function Ads() {
     <div
       className="
       w-full  
-      h-[157px]  
+      h-[147px]
       bg-[#C1FF00] 
       rounded-[30px]
       relative 

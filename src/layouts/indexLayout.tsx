@@ -7,6 +7,7 @@ import { ReactNode } from "react";
 import { MiniButton } from "@/app/components/ui/button";
 import { Style } from "@/styles";
 import { FaPlus } from "react-icons/fa";
+import UnclaimedGroup from "@/app/components/unclaimedGroup";
 
 interface Iprops {
   children: ReactNode;
