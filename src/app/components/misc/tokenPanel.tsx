@@ -32,10 +32,6 @@ const DataDisplay = () => {
 const TokenPanel = ({ src, name }: IProps) => {
   return (
     <div
-      className="mb-4"
-      style={{
-        borderBottom: "1px solid gray",
-      }}
     >
       <div className="flex gap-2 items-center ">
         <div
@@ -56,7 +52,7 @@ const TokenPanel = ({ src, name }: IProps) => {
         </div>
       </div>
 
-      <div>
+      {/* <div>
         <div className="gap-4 items-center flex ">
           <div>
             <DataDisplay />
@@ -64,7 +60,7 @@ const TokenPanel = ({ src, name }: IProps) => {
           <MiniButton>Join</MiniButton>
           <MiniButton>Buy</MiniButton>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
