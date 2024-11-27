@@ -69,8 +69,6 @@ export default function GroupsCard() {
     },
   ];
 
-
-
   return (
     <div
       className="

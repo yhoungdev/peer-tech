@@ -1,5 +1,5 @@
 "use client";
-import { useState , useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Dialog } from "@headlessui/react";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import { useWallet } from "@solana/wallet-adapter-react";
@@ -7,16 +7,14 @@ import IndexLayout from "@/layouts/indexLayout";
 import Ads from "./components/Ads";
 import TokenAndChartSection from "./components/sections/tokenAndChartSection";
 
-
 export default function Home() {
-
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     setIsOpen(true);
   }, []);
 
-    const { connected } = useWallet();
+  const { connected } = useWallet();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -27,7 +25,7 @@ export default function Home() {
     <IndexLayout>
       <div className=" md:w-[830px] mx-auto">
         <Ads />
-        <TokenAndChartSection/>
+        <TokenAndChartSection />
       </div>
 
       {/* <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
@@ -62,7 +60,6 @@ export default function Home() {
           </Dialog.Panel>
         </div>
       </Dialog> */}
-
     </IndexLayout>
   );
 }

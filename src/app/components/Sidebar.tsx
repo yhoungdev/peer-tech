@@ -18,50 +18,47 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
     setIsMobileSidebarOpen(!isMobileSidebarOpen);
   };
 
-  
-  const path = usePathname()
+  const path = usePathname();
 
   return (
     <>
-
       <div className="md:hidden fixed top-0 left-0 right-0 bg-[#0F0E0E] z-40 flex justify-between items-center p-4">
         <h1 className="text-2xl font-normal text-white">Peer.onl</h1>
-        
+
         <div className="flex items-center gap-4">
-        {
-          path === '/' && <Link href={'/group'}>
-          <Button>Groups</Button>
-          </Link>
-        }
-        <button 
-          onClick={toggleMobileSidebar}
-          className="w-6 h-5 flex flex-col justify-between cursor-pointer"
-        >
-          <div
-            className={`
+          {path === "/" && (
+            <Link href={"/group"}>
+              <Button>Groups</Button>
+            </Link>
+          )}
+          <button
+            onClick={toggleMobileSidebar}
+            className="w-6 h-5 flex flex-col justify-between cursor-pointer"
+          >
+            <div
+              className={`
             w-6 h-[2px] bg-[#C1FF00]
             transition-all duration-300 ease-in-out
             ${isMobileSidebarOpen ? "rotate-45 translate-y-2" : "rotate-0"}
           `}
-          />
-          <div
-            className={`
+            />
+            <div
+              className={`
             w-6 h-[2px] bg-[#C1FF00]
             transition-all duration-300 ease-in-out
             ${isMobileSidebarOpen ? "opacity-0" : "opacity-100"}
           `}
-          />
-          <div
-            className={`
+            />
+            <div
+              className={`
             w-6 h-[2px] bg-[#C1FF00]
             transition-all duration-300 ease-in-out
             ${isMobileSidebarOpen ? "-rotate-45 -translate-y-2" : "rotate-0"}
           `}
-          />
-        </button>
+            />
+          </button>
         </div>
       </div>
-
 
       <div
         className={`
@@ -76,7 +73,9 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
         font-['Jersey_10']
         relative
       `}
-      >        <div
+      >
+        {" "}
+        <div
           className={`
           flex items-center
           px-5 pt-6 mb-8
@@ -94,7 +93,6 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
             Peer.onl
           </h1>
 
-          
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="w-6 h-5 flex flex-col justify-between cursor-pointer"
@@ -122,8 +120,6 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
             />
           </button>
         </div>
-
-
         <nav className="px-5">
           {menuItems.map((item, index) => (
             <a
@@ -166,8 +162,6 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
             </a>
           ))}
         </nav>
-
-
         <div className="px-5 mb-4 mt-auto">
           <a
             href="/settings"
@@ -200,8 +194,6 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
             </span>
           </a>
         </div>
-
-     
         <div
           className={`
           absolute
@@ -234,7 +226,6 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
         </div>
       </div>
 
- 
       <div
         className={`
         md:hidden
@@ -251,7 +242,6 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
         ${isMobileSidebarOpen ? "translate-x-0" : "-translate-x-full"}
       `}
       >
-
         <nav className="px-5">
           {menuItems.map((item, index) => (
             <a
@@ -344,13 +334,11 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
       </div>
 
       {isMobileSidebarOpen && (
-        <div 
+        <div
           className="md:hidden fixed inset-0 bg-black/50 z-20"
           onClick={toggleMobileSidebar}
         />
       )}
-
-
     </>
   );
 }

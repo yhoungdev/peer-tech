@@ -31,8 +31,7 @@ const DataDisplay = () => {
 
 const TokenPanel = ({ src, name }: IProps) => {
   return (
-    <div
-    >
+    <div>
       <div className="flex gap-2 items-center ">
         <div
           className="w-10 h-10 rounded-full"
@@ -51,6 +50,10 @@ const TokenPanel = ({ src, name }: IProps) => {
           </div>
         </div>
       </div>
+
+      <div>
+            <DataDisplay />
+          </div>
 
       {/* <div>
         <div className="gap-4 items-center flex ">

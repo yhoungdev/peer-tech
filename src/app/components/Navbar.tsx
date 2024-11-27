@@ -18,7 +18,7 @@ export default function Navbar() {
       <div></div>
       <div className="flex items-center gap-[4em]">
         <div className="relative md:w-[400px]">
-        <input
+          <input
             type="text"
             placeholder="Search......"
             className="
@@ -48,7 +48,6 @@ export default function Navbar() {
           </div>
         </div>
 
-       
         <WalletMultiButton
           className="
             !bg-[#C1FF00] 
