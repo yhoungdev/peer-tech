@@ -1,5 +1,6 @@
 import React, { useEffect, useState, Fragment } from "react";
 import TokenPanel from "../misc/tokenPanel";
+import TokenChart from "./chart";
 
 function TokenAndChartSection() {
   const [tokens, setTokens] = useState([]);
@@ -45,13 +46,10 @@ function TokenAndChartSection() {
         </div>
         <div
           className="w-full md:w-[60%] h-[465px] bg-[#1E1E1E] rounded-2xl"
-          style={{
-            backgroundImage: "url(/images/chart.svg)",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-          }}
-        ></div>
+          
+        >
+          <TokenChart/>
+        </div>
       </div>
     </div>
   );
