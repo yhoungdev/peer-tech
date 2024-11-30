@@ -4,8 +4,8 @@ import Card from '@/app/components/ui/card'
 
 export default function CryptoDashboard() {
     return (
-        <div className="bg-black min-h-screen p-4">
-            <Card className="max-w-md mx-auto">
+        <div className=" p-4">
+            <Card className="w-full  md:w-[300px] mx-auto">
                 <div className="p-4 space-y-6">
 
                     <div className="h-48 flex items-end">
