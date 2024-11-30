@@ -7,9 +7,11 @@ export default function ChatPage() {
 
     return (
         <IndexLayout>
-            <div className=" md:w-[830px] mx-auto">
-
+            <div className=" md:w-[830px] bg-dark w-full mx-auto
+                h-[608px] rounded-lg">
+                lorem
             </div>
         </IndexLayout>
     );
 }
+

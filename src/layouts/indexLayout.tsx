@@ -19,7 +19,7 @@ export default function IndexLayout({ children }: Iprops) {
         <div className="relative z-10">
           {/* <DaoTokenData /> */}
           <div className="flex gap-10  ">
-            <div className="px-[3em] w-full">{children}</div>
+            <div className="px-[3em] w-full ">{children}</div>
           </div>
 
           <div className="mt-4  ">
@@ -31,8 +31,8 @@ export default function IndexLayout({ children }: Iprops) {
             >
               Unclaimed Groups
             </h3>
-            {/* <div
-              className="flex w-full my-4 flex-wrap items-center  "
+         <div
+              className="flex w-full my-4 flex-wrap items-center bottom relative z-10 "
               style={{
                 gap: "3em",
                 marginLeft: "1em",
@@ -80,7 +80,7 @@ export default function IndexLayout({ children }: Iprops) {
                   </div>
                 </div>
               ))}
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
