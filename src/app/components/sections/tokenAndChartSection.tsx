@@ -44,11 +44,8 @@ function TokenAndChartSection() {
             ))}
           </div>
         </div>
-        <div
-          className="w-full md:w-[60%] h-[465px] bg-[#1E1E1E] rounded-2xl"
-          
-        >
-          <TokenChart/>
+        <div className="w-full md:w-[60%] h-[465px] bg-[#1E1E1E] rounded-2xl">
+          <TokenChart />
         </div>
       </div>
     </div>

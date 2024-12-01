@@ -31,7 +31,7 @@ export default function IndexLayout({ children }: Iprops) {
             >
               Unclaimed Groups
             </h3>
-         <div
+            <div
               className="flex w-full my-4 flex-wrap items-center bottom relative z-10 "
               style={{
                 gap: "3em",

@@ -52,8 +52,8 @@ const TokenPanel = ({ src, name }: IProps) => {
       </div>
 
       <div>
-            <DataDisplay />
-          </div>
+        <DataDisplay />
+      </div>
 
       {/* <div>
         <div className="gap-4 items-center flex ">
